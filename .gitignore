@@ -157,11 +157,10 @@ dist
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history.vscode/settings.json
 *.code-workspace
 
 # Local History for Visual Studio Code
-.history/
+**.history/
 
 # Local Netlify folder
 .netlify
