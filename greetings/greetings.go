@@ -14,11 +14,13 @@ func Hello(name string) (string, error) {
 	}
 	// Create a message using a random format.
 	message := fmt.Sprintf(randomFormat(), name)
+	// message := fmt.Sprint(randomFormat())
 	return message, nil
 }
 
 // Hellos return a map that associates each of the named
-//  with a greeting message.
+//
+//	with a greeting message.
 func Hellos(names []string) (map[string]string, error) {
 	// A map to associate names with messages.
 	messages := make(map[string]string)
@@ -53,7 +55,7 @@ func randomFormat() string {
 	return formats[rand.Intn(len(formats))]
 }
 
-	// If a name was received, return a value that embeds the name
-	// in a greeting message.
-	// message := fmt.Sprintf("Hi, %v. Welcome!", name)
-	// return message, nil
+// If a name was received, return a value that embeds the name
+// in a greeting message.
+// message := fmt.Sprintf("Hi, %v. Welcome!", name)
+// return message, nil
